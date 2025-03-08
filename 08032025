@@ -1,0 +1,16 @@
+#include<stdio.h>
+main(){
+	int ar[]={5,9,1,5,6};
+	int i;
+	for(i=0;i<5;i++)
+		printf("%d ",ar[i]);
+	printf("\n");
+	for(i=0;i<5;i++)
+		printf("%d ",*(ar+i));
+	printf("\n");
+	for(i=0;i<5;i++)
+		printf("%d ",*(i+ar));
+	printf("\n");
+	for(i=0;i<5;i++)
+		printf("%d ",i[ar]);
+}
