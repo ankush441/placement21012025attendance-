@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<malloc.h>
+typedef struct{
+	int bookno;
+	char title[51];
+	double price;
+	char status;
+} Book;
+main(){
+	Book *b=malloc1(sizeof(Book));
+	printf("Book No : "); 
+	scanf("%d%*c",&b->bookno);
+	printf("Title : ");
+	gets(b->title);
+	printf("Price : ");
+	scanf("%lf%*c",&b->price);
+	printf("Status [A/I] : ");
+	b->status=getchar();
+	printf("%d %s %f %c",b->bookno,b->title,b->price,b->status);
+}
