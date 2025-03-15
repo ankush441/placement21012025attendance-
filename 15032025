@@ -1,0 +1,12 @@
+#include "stdio.h"
+#include "myheader.h"
+main(){
+	
+	int num;
+	int result;
+	printf("Enter a number : ");
+	scanf("%d",&num);
+
+	result=factorial(num);
+	printf("Factorial is %d",result);
+}
